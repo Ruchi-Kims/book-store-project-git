@@ -1,0 +1,9 @@
+# Dépendances Node
+/node_modules
+
+# Fichiers de configuration sensibles
+.env
+
+# Fichiers de log ou de build
+npm-debug.log*
+dist
