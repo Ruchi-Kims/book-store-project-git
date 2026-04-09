@@ -9,7 +9,6 @@ const Register = () => {
 
   const [message,setMessage] = useState("");
   const {registerUser, signInWithGoogle} = useAuth();
-  console.log(registerUser)
     const {
       register,
       handleSubmit,
@@ -18,7 +17,6 @@ const Register = () => {
     } = useForm()
   
     const onSubmit = async (data) => {
-            console.log(data)
             try {
                 await registerUser(data.email, data.password);
                 alert("User registered successfully !")
